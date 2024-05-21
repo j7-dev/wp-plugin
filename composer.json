@@ -24,7 +24,7 @@
   },
   "require": {
     "yahnis-elsts/plugin-update-checker": "^5.3",
-    "j7-dev/tgm-plugin-activation-forked": "^1.0",
+    "j7-dev/tgm-plugin-activation-forked": "1.2.2",
     "micropackage/singleton": "^1.1"
   },
   "require-dev": {
