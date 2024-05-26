@@ -58,7 +58,7 @@ final class Bootstrap {
 	public function enqueue_script(): void {
 
 		\wp_enqueue_script(
-			Plugin::KEBAB,
+			Plugin::$kebab,
 			Plugin::$url . '/js/dist/index.js',
 			array( 'jquery' ),
 			Plugin::$version,
@@ -69,7 +69,7 @@ final class Bootstrap {
 		);
 
 		\wp_enqueue_style(
-			Plugin::KEBAB,
+			Plugin::$kebab,
 			Plugin::$url . '/js/dist/assets/css/index.css',
 			array(),
 			Plugin::$version
