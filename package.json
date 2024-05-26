@@ -1,6 +1,6 @@
 {
-  "name": "create-wp-plugin",
-  "version": "3.0.0",
+  "name": "create-j7wp-plugin",
+  "version": "4.0.0",
   "type": "module",
   "scripts": {
     "bootstrap": "npm install && composer install --no-interaction",
