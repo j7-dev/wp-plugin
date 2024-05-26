@@ -7,12 +7,11 @@ declare (strict_types = 1);
 
 namespace J7\WpPlugin;
 
-use Micropackage\Singleton\Singleton;
-
 /**
  * Class Bootstrap
  */
-final class Bootstrap extends Singleton {
+final class Bootstrap {
+	use \J7\WpUtils\Traits\SingletonTrait;
 
 
 	/**
