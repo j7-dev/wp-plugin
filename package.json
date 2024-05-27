@@ -1,5 +1,5 @@
 {
-  "name": "@j7/create-wp-plugin",
+  "name": "create-wp-vite-plugin",
   "version": "4.0.3",
   "type": "module",
   "scripts": {
