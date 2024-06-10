@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d1c8c9f867b7adbb53f70772a913527",
+    "content-hash": "39008846372fe6e363051f3f279b9d08",
     "packages": [
         {
             "name": "j7-dev/tgm-plugin-activation-forked",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/j7-dev/tgm-plugin-activation-forked.git",
-                "reference": "42433f3d49088a8435f46806ae001bbc0bf96156"
+                "reference": "c1a5f4c4286c624d3161dfe230eb22a256cd093a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/j7-dev/tgm-plugin-activation-forked/zipball/42433f3d49088a8435f46806ae001bbc0bf96156",
-                "reference": "42433f3d49088a8435f46806ae001bbc0bf96156",
+                "url": "https://api.github.com/repos/j7-dev/tgm-plugin-activation-forked/zipball/c1a5f4c4286c624d3161dfe230eb22a256cd093a",
+                "reference": "c1a5f4c4286c624d3161dfe230eb22a256cd093a",
                 "shasum": ""
             },
             "require": {
@@ -54,24 +54,24 @@
                 "issues": "https://github.com/j7-dev/tgm-plugin-activation-forked/issues",
                 "source": "https://github.com/j7-dev/tgm-plugin-activation-forked"
             },
-            "time": "2024-05-21T17:57:04+00:00"
+            "time": "2024-06-10T10:48:54+00:00"
         },
         {
             "name": "j7-dev/wp-utils",
-            "version": "0.0.8",
+            "version": "0.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/j7-dev/wp-utils.git",
-                "reference": "298638a3c295469b490fda1ecdb3ad61acc5855b"
+                "reference": "06fc700baf7a198c7eddb9531ec5e94feb5d1eeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/j7-dev/wp-utils/zipball/298638a3c295469b490fda1ecdb3ad61acc5855b",
-                "reference": "298638a3c295469b490fda1ecdb3ad61acc5855b",
+                "url": "https://api.github.com/repos/j7-dev/wp-utils/zipball/06fc700baf7a198c7eddb9531ec5e94feb5d1eeb",
+                "reference": "06fc700baf7a198c7eddb9531ec5e94feb5d1eeb",
                 "shasum": ""
             },
             "require": {
-                "j7-dev/tgm-plugin-activation-forked": "1.2.2",
+                "j7-dev/tgm-plugin-activation-forked": "1.2.3",
                 "yahnis-elsts/plugin-update-checker": "5.3"
             },
             "require-dev": {
@@ -108,9 +108,9 @@
             ],
             "support": {
                 "issues": "https://github.com/j7-dev/wp-utils/issues",
-                "source": "https://github.com/j7-dev/wp-utils/tree/0.0.8"
+                "source": "https://github.com/j7-dev/wp-utils/tree/0.0.14"
             },
-            "time": "2024-05-25T17:33:28+00:00"
+            "time": "2024-06-10T10:50:32+00:00"
         },
         {
             "name": "yahnis-elsts/plugin-update-checker",
@@ -322,22 +322,22 @@
         },
         {
             "name": "phpcsstandards/phpcsutils",
-            "version": "1.0.10",
+            "version": "1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHPCSUtils.git",
-                "reference": "51609a5b89f928e0c463d6df80eb38eff1eaf544"
+                "reference": "87b233b00daf83fb70f40c9a28692be017ea7c6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHPCSUtils/zipball/51609a5b89f928e0c463d6df80eb38eff1eaf544",
-                "reference": "51609a5b89f928e0c463d6df80eb38eff1eaf544",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHPCSUtils/zipball/87b233b00daf83fb70f40c9a28692be017ea7c6c",
+                "reference": "87b233b00daf83fb70f40c9a28692be017ea7c6c",
                 "shasum": ""
             },
             "require": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.1 || ^0.5 || ^0.6.2 || ^0.7 || ^1.0",
                 "php": ">=5.4",
-                "squizlabs/php_codesniffer": "^3.9.0 || 4.0.x-dev@dev"
+                "squizlabs/php_codesniffer": "^3.10.0 || 4.0.x-dev@dev"
             },
             "require-dev": {
                 "ext-filter": "*",
@@ -406,20 +406,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-03-17T23:44:50+00:00"
+            "time": "2024-05-20T13:34:27+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.9.1",
+            "version": "3.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "267a4405fff1d9c847134db3a3c92f1ab7f77909"
+                "reference": "8f90f7a53ce271935282967f53d0894f8f1ff877"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/267a4405fff1d9c847134db3a3c92f1ab7f77909",
-                "reference": "267a4405fff1d9c847134db3a3c92f1ab7f77909",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/8f90f7a53ce271935282967f53d0894f8f1ff877",
+                "reference": "8f90f7a53ce271935282967f53d0894f8f1ff877",
                 "shasum": ""
             },
             "require": {
@@ -486,7 +486,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-03-31T21:03:09+00:00"
+            "time": "2024-05-22T21:24:41+00:00"
         },
         {
             "name": "wp-coding-standards/wpcs",
