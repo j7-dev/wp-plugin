@@ -54,7 +54,7 @@ if ( ! \class_exists( 'J7\WpPlugin\Plugin' ) ) {
 				[
 					'app_name'    => 'My Plugin',
 					'github_repo' => 'https://github.com/j7-dev/wp-plugin',
-					'callback'    => [ '\J7\WpPlugin\Bootstrap', 'instance' ],
+					'callback'    => [ Bootstrap::class, 'instance' ],
 				]
 			);
 		}
