@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2832407044dcd34b68814d5c1198aed8",
+    "content-hash": "7b5256cb3fffcea3baea1e58bf18d192",
     "packages": [
         {
             "name": "j7-dev/tgm-plugin-activation-forked",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/j7-dev/tgm-plugin-activation-forked.git",
-                "reference": "c1a5f4c4286c624d3161dfe230eb22a256cd093a"
+                "reference": "b40e832ed1655dd660772b683ba8b7d6bddd7a62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/j7-dev/tgm-plugin-activation-forked/zipball/c1a5f4c4286c624d3161dfe230eb22a256cd093a",
-                "reference": "c1a5f4c4286c624d3161dfe230eb22a256cd093a",
+                "url": "https://api.github.com/repos/j7-dev/tgm-plugin-activation-forked/zipball/b40e832ed1655dd660772b683ba8b7d6bddd7a62",
+                "reference": "b40e832ed1655dd660772b683ba8b7d6bddd7a62",
                 "shasum": ""
             },
             "require": {
@@ -54,28 +54,93 @@
                 "issues": "https://github.com/j7-dev/tgm-plugin-activation-forked/issues",
                 "source": "https://github.com/j7-dev/tgm-plugin-activation-forked"
             },
-            "time": "2024-06-10T10:48:54+00:00"
+            "time": "2024-07-03T04:41:48+00:00"
         },
         {
-            "name": "j7-dev/wp-utils",
-            "version": "0.0.14",
+            "name": "j7-dev/wp-plugin-trait",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/j7-dev/wp-utils.git",
-                "reference": "06fc700baf7a198c7eddb9531ec5e94feb5d1eeb"
+                "url": "https://github.com/j7-dev/wp-plugin-trait.git",
+                "reference": "861efed5721e0b8c036206b3876ed8e858be0283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/j7-dev/wp-utils/zipball/06fc700baf7a198c7eddb9531ec5e94feb5d1eeb",
-                "reference": "06fc700baf7a198c7eddb9531ec5e94feb5d1eeb",
+                "url": "https://api.github.com/repos/j7-dev/wp-plugin-trait/zipball/861efed5721e0b8c036206b3876ed8e858be0283",
+                "reference": "861efed5721e0b8c036206b3876ed8e858be0283",
                 "shasum": ""
             },
             "require": {
-                "j7-dev/tgm-plugin-activation-forked": "1.2.3",
+                "j7-dev/tgm-plugin-activation-forked": "1.2.4",
                 "yahnis-elsts/plugin-update-checker": "5.3"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "@stable",
+                "php-stubs/woocommerce-stubs": "^9.0",
+                "php-stubs/wordpress-stubs": "^6.5",
+                "phpcompatibility/php-compatibility": "@stable",
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan": "^1.11",
+                "squizlabs/php_codesniffer": "@stable",
+                "wp-coding-standards/wpcs": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "J7\\WpUtils\\Traits\\": "src/traits/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "JerryLiu",
+                    "email": "j7.dev.gg@gmail.com",
+                    "homepage": "https://github.com/j7-dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "traits for WordPress plugin development",
+            "homepage": "https://github.com/j7-dev",
+            "keywords": [
+                "classes",
+                "traits",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/j7-dev/wp-plugin-trait/issues",
+                "source": "https://github.com/j7-dev/wp-plugin-trait/tree/0.0.1"
+            },
+            "time": "2024-07-31T13:58:06+00:00"
+        },
+        {
+            "name": "j7-dev/wp-utils",
+            "version": "0.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/j7-dev/wp-utils.git",
+                "reference": "884ccb9dc60118e7030a5c290418f2e5cd6e02d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/j7-dev/wp-utils/zipball/884ccb9dc60118e7030a5c290418f2e5cd6e02d8",
+                "reference": "884ccb9dc60118e7030a5c290418f2e5cd6e02d8",
+                "shasum": ""
+            },
+            "require": {
+                "j7-dev/tgm-plugin-activation-forked": "1.2.4",
+                "j7-dev/wp-plugin-trait": "0.0.1",
+                "yahnis-elsts/plugin-update-checker": "5.3"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "@stable",
+                "php-stubs/woocommerce-stubs": "^9.0",
+                "php-stubs/wordpress-stubs": "^6.5",
+                "phpcompatibility/php-compatibility": "@stable",
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan": "^1.11",
                 "squizlabs/php_codesniffer": "@stable",
                 "wp-coding-standards/wpcs": "@stable"
             },
@@ -108,9 +173,9 @@
             ],
             "support": {
                 "issues": "https://github.com/j7-dev/wp-utils/issues",
-                "source": "https://github.com/j7-dev/wp-utils/tree/0.0.14"
+                "source": "https://github.com/j7-dev/wp-utils/tree/0.2.9"
             },
-            "time": "2024-06-10T10:50:32+00:00"
+            "time": "2024-08-01T07:30:56+00:00"
         },
         {
             "name": "yahnis-elsts/plugin-update-checker",

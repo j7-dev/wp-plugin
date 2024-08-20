@@ -7,6 +7,9 @@ declare (strict_types = 1);
 
 namespace J7\WpPlugin\Utils;
 
+if ( class_exists( 'J7\WpPlugin\Utils\Base' ) ) {
+	return;
+}
 /**
  * Class Base
  */
