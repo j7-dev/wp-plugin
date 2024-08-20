@@ -3,7 +3,7 @@
  * Plugin Name:       My Plugin (DEV) | 我的 WordPress 外掛
  * Plugin URI:        https://cloud.luke.cafe/plugins/
  * Description:       這是一個 WordPress 外掛的範本，可以用來開發新的外掛。
- * Version:           4.0.5
+ * Version:           4.0.6
  * Requires at least: 5.7
  * Requires PHP:      8.0
  * Author:            J7
