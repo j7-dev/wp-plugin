@@ -1,20 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 // eslint-disable-next-line no-undef
 module.exports = {
-	important: true,
+	// important: '.tailwind',  // you have to use tailwindcss inside a .tailwind class container, or just type true.
 	corePlugins: {
 		preflight: false,
 	},
-	content: ['./js/src/**/*.{js,ts,jsx,tsx}', './inc/**/*.php'],
+	content: [
+		'./js/src/**/*.{js,ts,jsx,tsx}',
+		'./inc/**/*.php',
+		'./inc/assets/src/**/*.{js,ts,jsx,tsx}',
+	],
 	theme: {
-		animation: {
-			// why need this? because elementor plugin might conflict with same animate keyframe name
-			// we override the animation name with this
-			pulse: 'tw-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-		},
 		extend: {
-			colors: {
-				primary: '#1677ff',
+			animation: {
+				// why need this? because elementor plugin might conflict with same animate keyframe name
+				// we override the animation name with this
+				pulse: 'tw-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
 			},
 			screens: {
 				sm: '576px', // iphone SE
@@ -33,11 +34,11 @@ module.exports = {
 	plugins: [
 		function ({ addUtilities }) {
 			const newUtilities = {
-				'.rtl': {
+				'.right-to-left': {
 					direction: 'rtl',
 				},
 
-				// 與 WordPress 衝突的 class
+				// classes conflicted with WordPress
 				'.tw-hidden': {
 					display: 'none',
 				},
@@ -50,10 +51,25 @@ module.exports = {
 				'.tw-fixed': {
 					position: 'fixed',
 				},
+				'.tw-block': {
+					display: 'block',
+				},
+				'.tw-inline': {
+					display: 'inline',
+				},
 			}
 			addUtilities(newUtilities, ['responsive', 'hover'])
 		},
 	],
 	safelist: [],
-	blocklist: ['fixed', 'columns-1', 'columns-2', 'hidden'],
+	blocklist: [
+		// classes conflicted with WordPress
+		'hidden',
+		'columns-1',
+		'columns-2',
+		'fixed',
+		'block',
+		'inline',
+		'rtl'
+	],
 }
