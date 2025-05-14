@@ -1,32 +1,16 @@
 <?php
-/**
- * Bootstrap
- */
 
 declare (strict_types = 1);
 
 namespace J7\WpPlugin;
 
-if ( class_exists( 'J7\WpPlugin\Bootstrap' ) ) {
-	return;
-}
-/**
- * Class Bootstrap
- */
+/** Class Bootstrap */
 final class Bootstrap {
 	use \J7\WpUtils\Traits\SingletonTrait;
 
-	/**
-	 * @var array
-	 * Store instances of classes
-	 */
-	public $instances = [];
-
-	/**
-	 * Constructor
-	 */
+	/** Constructor */
 	public function __construct() {
-		$this->instances['FrontEnd\Entry'] = FrontEnd\Entry::instance();
+		FrontEnd\Entry::instance();
 
 		\add_action( 'admin_enqueue_scripts', [ __CLASS__, 'admin_enqueue_script' ] );
 		\add_action( 'wp_enqueue_scripts', [ __CLASS__, 'frontend_enqueue_script' ] );

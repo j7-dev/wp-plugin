@@ -64,9 +64,9 @@ function replaceString(str) {
 		files: [
 			'./composer.json',
 			'./plugin.php',
-			'./inc/class/class-bootstrap.php',
-			'./inc/class/front-end/class-entry.php',
-			'./inc/class/utils/class-base.php',
+			'./inc/classes/Bootstrap.php',
+			'./inc/classes/FrontEnd/Entry.php',
+			'./inc/classes/Utils/Base.php',
 		],
 		from: /WpPlugin/g,
 		to: pascalName,
