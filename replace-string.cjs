@@ -77,6 +77,7 @@ function replaceString(str) {
 			'./composer.json',
 			'./package.json',
 			'./plugin.php',
+			'./release/.release-it.cjs',
 		],
 		from: /wp-plugin/g,
 		to: kebabName,
