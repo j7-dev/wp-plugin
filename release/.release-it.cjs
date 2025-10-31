@@ -39,10 +39,14 @@ module.exports = {
 		requireCleanWorkingDir: release,
 	},
 	hooks: {
-		// 'before:init': [], // run before initialization
+		'before:init': [
+			'pnpm build && echo ✅ build success',
+		], // run before initialization
 		// 'after:[my-plugin]:bump': './bin/my-script.sh', // run after bumping version of my-plugin
 		'after:bump': [
-			'pnpm build && echo ✅ build success && pnpm sync:version && echo ✅ sync version success',
+			release
+				? 'pnpm sync:version && echo ✅ sync version success'
+				: 'echo 🚫 skip sync version',
 			'pnpm create:release && echo ✅ create release files success',
 			`cd release/${releasedPluginName}/${releasedPluginName} && composer install --no-dev && cd ../.. && echo ✅ composer install success`,
 			'pnpm zip && echo ✅ create zip success',
@@ -56,7 +60,7 @@ module.exports = {
 		publish: false,
 	},
 	github: {
-		release: true,
+		release,
 		releaseName: 'v${version}',
 		assets: [`./release/${releasedPluginName}.zip`], // relative path
 		web: false,
