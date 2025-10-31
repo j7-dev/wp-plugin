@@ -6,14 +6,14 @@ namespace J7\WpPlugin;
 
 /** Class Bootstrap */
 final class Bootstrap {
+
 	use \J7\WpUtils\Traits\SingletonTrait;
 
 	/** Constructor */
 	public function __construct() {
-		FrontEnd\Entry::instance();
 
-		\add_action( 'admin_enqueue_scripts', [ __CLASS__, 'admin_enqueue_script' ] );
-		\add_action( 'wp_enqueue_scripts', [ __CLASS__, 'frontend_enqueue_script' ] );
+		\add_action('admin_enqueue_scripts', [ __CLASS__, 'admin_enqueue_script' ]);
+		\add_action('wp_enqueue_scripts', [ __CLASS__, 'frontend_enqueue_script' ]);
 	}
 
 	/**
