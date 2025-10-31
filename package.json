@@ -1,6 +1,6 @@
 {
   "name": "create-wp-vite-plugin",
-  "version": "4.0.8",
+  "version": "4.0.9",
   "type": "module",
   "scripts": {
     "bootstrap": "pnpm install && composer install --no-interaction",
@@ -29,11 +29,11 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-		"@vue/eslint-config-prettier": "^10.2.0",
-		"@vue/eslint-config-typescript": "^14.6.0",
-		"@vue/tsconfig": "^0.8.1",
-		"vite-plugin-vue-devtools": "^8.0.1",
-		"@vitejs/plugin-vue": "^6.0.1",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/eslint-config-typescript": "^14.6.0",
+    "@vue/tsconfig": "^0.8.1",
+    "vite-plugin-vue-devtools": "^8.0.1",
+    "@vitejs/plugin-vue": "^6.0.1",
     "@rollup/plugin-alias": "^5.0.0",
     "@soderlind/wp-project-version-sync": "^2.0.2",
     "@types/jquery": "^3.5.29",
