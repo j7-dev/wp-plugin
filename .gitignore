@@ -12,6 +12,8 @@ lerna-debug.log*
 **/dist/**
 **/dist*/**
 **/vendor/**
+**/vendor-prefixed/**
+bin/strauss.phar
 dist-ssr
 *.local
 release/*
