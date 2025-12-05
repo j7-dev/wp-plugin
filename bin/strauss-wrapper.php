@@ -2,6 +2,9 @@
 <?php
 /**
  * Strauss wrapper that runs in WSL environment to avoid Windows path issues
+ * 如果在 windows 環境下執行，則透過 WSL 執行 strauss.phar
+ * "strauss:run": "php bin/strauss-wrapper.php",
+ * 如果是 mac/linux 就跑原本的 strauss.phar
  */
 
 $project_dir = realpath(__DIR__ . '/..');

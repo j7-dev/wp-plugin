@@ -28,8 +28,29 @@
 			"phpstan/extension-installer": true
 		}
 	},
+	"extra": {
+		"strauss": {
+			"target_directory": "vendor-prefixed",
+			"namespace_prefix": "MyNS\\",
+			"classmap_prefix": "MyNS_",
+			"constant_prefix": "MyNS_",
+			"include_modified_date": false,
+			"delete_vendor_packages": false,
+			"exclude_from_prefix": {
+				"packages": [
+					"yahnis-elsts/plugin-update-checker"
+				]
+			},
+			"exclude_from_copy": {
+				"file_patterns": [
+					"/examples/"
+				]
+			}
+		}
+	},
 	"require": {
-		"j7-dev/wp-utils": "^0.3"
+		"j7-dev/wp-utils": "^0.3",
+		"guzzlehttp/guzzle": "^7.10"
 	},
 	"require-dev": {
 		"squizlabs/php_codesniffer": "@stable",
@@ -42,6 +63,18 @@
 		"phpstan/extension-installer": "@stable"
 	},
 	"scripts": {
-		"lint": "phpcs"
+		"lint": "phpcs",
+		"strauss:clean": "php bin/strauss-clean.php",
+		"strauss:run": "php bin/strauss-wrapper.php",
+		"strauss": [
+			"@strauss:clean",
+			"@strauss:run"
+		],
+		"post-install-cmd": [
+			"@strauss"
+		],
+		"post-update-cmd": [
+			"@strauss"
+		]
 	}
 }

@@ -7,7 +7,7 @@ namespace J7\WpPlugin;
 /** Class Bootstrap */
 final class Bootstrap {
 
-	use \J7\WpUtils\Traits\SingletonTrait;
+	use \MyNS\J7\WpUtils\Traits\SingletonTrait;
 
 	/** Constructor */
 	public function __construct() {

@@ -22,14 +22,15 @@ namespace J7\WpPlugin;
 if ( \class_exists( 'J7\WpPlugin\Plugin' ) ) {
 	return;
 }
-require_once __DIR__ . '/vendor/autoload.php';
+// 載入前綴化的生產依賴，避免命名空間衝突
+require_once __DIR__ . '/vendor-prefixed/autoload.php';
 
 /**
 	* Class Plugin
 	*/
 final class Plugin {
-	use \J7\WpUtils\Traits\PluginTrait;
-	use \J7\WpUtils\Traits\SingletonTrait;
+	use \MyNS\J7\WpUtils\Traits\PluginTrait;
+	use \MyNS\J7\WpUtils\Traits\SingletonTrait;
 
 	/**
 	 * Constructor
