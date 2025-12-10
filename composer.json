@@ -49,8 +49,7 @@
 		}
 	},
 	"require": {
-		"j7-dev/wp-utils": "^0.3",
-		"guzzlehttp/guzzle": "^7.10"
+		"j7-dev/wp-utils": "^0.3"
 	},
 	"require-dev": {
 		"squizlabs/php_codesniffer": "@stable",
@@ -64,6 +63,7 @@
 	},
 	"scripts": {
 		"lint": "phpcs",
+		"analyse": "phpstan analyse inc --memory-limit=6G",
 		"strauss:clean": "php bin/strauss-clean.php",
 		"strauss:run": "php bin/strauss-wrapper.php",
 		"strauss": [
